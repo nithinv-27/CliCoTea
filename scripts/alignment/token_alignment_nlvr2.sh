@@ -1,7 +1,7 @@
 # Path: scripts/alignment/token_alignment_nlvr2.sh
 #!/bin/sh
 DATA_DIR=${1:-data}
-for lang in "id" "sw" "ta" "tr" "zh-cn"
+for lang in "id"
 do
     for split in "train" "dev"
     do
