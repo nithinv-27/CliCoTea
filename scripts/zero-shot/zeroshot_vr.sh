@@ -3,10 +3,10 @@
 # Usage: sh scripts/zero-shot/zeroshot_ve.sh data lang flickr30k_image_root ckpt_path
 
 DATA_DIR=${1:-"data"}
-LANG=${2:-"fr"}
+LANG=${2:-"id"}
 TEST_FILE=$DATA_DIR/marvl/marvl_${LANG}_test.jsonl
 MARVL_IMAGE_ROOT=${3:-"marvl-images"}
-PATH_TO_CHECKPOINT=${4:-"experiments/nlvr2/albef_nlvr-nlvr-$LANG/checkpoint-epoch-10.pth"}
+PATH_TO_CHECKPOINT=${4:-"experiments/nlvr2/albef_nlvr-nlvr-$LANG/checkpoint_5.pt"}
 
 hatch run zeroshot --task "vr" \
       --test-file $TEST_FILE \
