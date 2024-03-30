@@ -16,7 +16,7 @@ hatch run clicotea \
     --align-with-cls \
     --output-dir "experiments/$TASK/$MODEL_NAME-$MODEL_TYPE-$LANG" \
     --batch-size 128 \
-    --epoch 50 \
+    --epoch 10 \
     --lr 5e-5 \
     --device "cuda" \
     --exp-name "token-align" \
